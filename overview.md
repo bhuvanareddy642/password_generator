@@ -1,7 +1,7 @@
 # Password Generator
 This is a simple web-based tool that generates random passwords based on user preferences.
 
-Checkout the project [here](https://karthik-parvathaneni.github.io/PasswordGenerator/)
+Checkout the project [here](https://bhuvanareddy642.github.io/)
 
 ## Features
 
