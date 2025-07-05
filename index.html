@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="passwordgen.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a Random Password</h1>
+        <div>
+            <input type="text" id="pass" placeholder="Password" readonly>
+            <img src="copy.png" alt="copy image" class="copy" onclick="copyPassword()">
+        </div>
+        <button class="generatePassword" onclick="passwordGenerator()">Generate Password</button>
+    </div>
+    <div class="preference_types">
+        <div class="input-label"><input type="range" value="2"min="2" max="25" class="slider" id="slider" oninput="sliderDisplay()">
+        <label for="slider" class="slider_label">2 characters</label></div>
+        <div class="input-label"><input type="checkbox" name="preferences" id="symbols"><label for="symbols">Include Symbols(!@#$...)</label></div>
+        <div class="input-label"><input type="checkbox" name="preferences" id="numbers"><label for="numbers">Include Numbers</label></div>
+        <div class="input-label"><input type="checkbox" name="preferences" id="caps"><label for="caps">Include Caps</label></div>
+        <div class="input-label"><input type="checkbox" name="preferences" id="lows"><label for="lows">Include Lows</label></div>
+    </div>
+    <script src="passwordgen.js"></script>
+</body>
+</html>
